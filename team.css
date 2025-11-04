@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #efefef;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  font-family: arial, Sans-Serif;
+}
+
+header {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  padding: 1px;
+  background: #3a7fef;
+  color: white;
+  max-width: 100%;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 3px black;
+  border-bottom: 3px solid #4fefef;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 7px;
+}
+
+.profile {
+  max-width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #2f4faf;
+  color: #dfefcf;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+  height: auto;
+  gap: 20px;
+  transition: all ease 0.3s;
+}
+
+.card p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 100px;
+  border: 2px solid black;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 4px #1f1f1f;
+  background: #0f5fbf;
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 95%;
+  }
+}
